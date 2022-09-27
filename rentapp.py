@@ -174,7 +174,7 @@ def predict(Number_of_bedrooms, Number_of_bathrooms, Number_of_toilets, Location
 
 if st.button('Predict Price'):
     price = predict(Number_of_bedrooms, Number_of_bathrooms, Number_of_toilets, Location, House_type)
-    st.success(f'The predicted price of the property is: ₦{:,.2f}'.format(price[0]))
+    st.success(f'The predicted price of the property is: ₦{:,.2f}'₦.format(price[0]))
 
 st.title('Contributors')
 st.text("""

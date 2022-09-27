@@ -5,7 +5,7 @@ from PIL import Image
 import pickle
 import joblib
 
-xgb_model = joblib.load('final_xgboost_model.pkl')
+xgb_model = joblib.load('new_xgboost_model.pkl')
 
 st.set_page_config(
     layout='wide',
@@ -180,10 +180,11 @@ st.title('Contributors')
 st.text("""
         This app was developed by:
         """)
-st.write('- Kehinde Olalekan (https://github.com/KENNYDGREAT2)')
+st.write('- Michael Onabanjo (https://github.com/Onabanjomicheal)')
 st.write('- Babajide Alao (https://github.com/BabajideAlao-knn)')
 st.write('- Paul Adegbite (https://github.com/octopuspaul110)')
 st.write('- Alinta Innocent (https://github.com/aliNtainnocent)')
-st.write('- Michael Onabanjo (https://github.com/Onabanjomicheal)')
+st.write('- Kehinde Olalekan (https://github.com/KENNYDGREAT2)')
+
 
 st.info('During #DSRoom Project challenge under the mentorship of Samson Afolabi (https://twitter.com/samsonafo)')

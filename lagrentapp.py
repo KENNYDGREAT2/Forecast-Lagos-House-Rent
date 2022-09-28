@@ -56,12 +56,10 @@ def main():
     
     # get data and convert data into dataframe
     with st.form(key='my_form'):
-        Location = st.selectbox('LOCATION:', ['Ikoyi', 'Yaba', 'Lekki', 'Ajah', 'Victoria Island', 'Ikeja',
-                           'Ilupeju', 'Isolo', 'Shomolu', 'Ketu', 'Surulere', 'Amuwo odofin','Abule Egba', 'Oshodi', 
-                            'Apapa','Ikorodu', 'Ojodu', 'Alimosho','Egbeda', 'Ikotun', 'Idimu', 'Ogba', 'Igando', 
-                            'Akowonjo','Ibeju/Lekki', 'Akoka', 'Ebute-metta', 'Ago Palace', 'Gbagada','Oworoshonki', 
-                            'Maryland', 'Ojo', 'Ayobo', 'Agege', 'Marina','Obalende', 'Lagos Island', 'Mushin', 'Magodo', 
-                            'Ojota', 'Ogudu','Epe', 'Bariga', 'Ejigbo', 'Badagry', 'Iganmu'])
+        Location = st.selectbox('LOCATION:', ['Lekki','Ajah','Ikoyi','Ibeju','Ikorodu','Victoria Island','Ipaja','Amuwo-Odofin','Isolo','Ikeja','Ojodu',                  
+                    'Yaba','Magodo','Alimosho','Surulere','Shomolu','Ikotun/Igando','Abule Egba','Gbagada','Ogudu','Ogba','Ifako-Ijaiye','Epe','Agege',                  
+                    'Kosofe','Maryland','Ilupeju','Agboyi/Ketu','Mushin','Ojo','Oshodi','Ilashe','Badagry','Agbara-Igbesan','Ojota','Orile','Lagos Island (Eko)',      
+                    'Ejigbo','Lagos State','Apapa','Eko Atlantic'])
         House_type = st.selectbox('HOUSE_TYPES',['FLAT','DUPLEX', 'BUNGALOW', 'HOUSE'])
         Number_of_bedrooms = st.number_input('BEDROOMS', min_value=1, max_value=9, value=1)
         Number_of_bathrooms = st.number_input('BATHROOMS', min_value=1, max_value=9, value=1)

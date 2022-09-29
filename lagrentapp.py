@@ -76,7 +76,7 @@ def main():
                            columns = ['LOCATION','HOUSE_TYPES', 'BEDROOMS', 'BATHROOMS', 'TOILETS', 'HOUSE_CONDITION', 'FURNISHED','SERVICED'])
 
     #prediction
-    abs(price) = model.predict(data_df)
+    price = model.predict(data_df)
     price = abs(price)
     
     if submit_button:

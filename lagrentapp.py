@@ -76,8 +76,8 @@ def main():
                            columns = ['LOCATION','HOUSE_TYPES', 'BEDROOMS', 'BATHROOMS', 'TOILETS', 'HOUSE_CONDITION', 'FURNISHED','SERVICED'])
 
     #prediction
-    price = model.predict(data_df)
-    price = abs(price)
+    price = (model.predict(data_df))
+    #price = abs(price)
     
     if submit_button:
         st.write('The predicted price of the property is: ₦{:,.2f}'.format(price[0]))

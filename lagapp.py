@@ -5,7 +5,7 @@ from PIL import Image
 import pickle
 import joblib
 
-xgb_model = joblib.load('new_xgboost_model.pkl')
+xgb_model = joblib.load('final_xgboost_model.pkl')
 
 st.set_page_config(
     layout='wide',
